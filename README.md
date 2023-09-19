@@ -23,6 +23,7 @@ void CMFCApplication8Dlg::OnBnClickedButton1()
 
 ```
 </br>
+
 ```
 //Add 버튼 클릭 시
 #include "MFCApplication8Dlg.h"
@@ -43,4 +44,5 @@ void CSon::PostNcDestroy()
 {                                                              //PostNcDestroy()는 대화상자가 완전히 소멸된 후에 호출되기 때문에 안전하게 삭제 가능
 	CDialogEx::PostNcDestroy();                                  //클래스 마법사를 통해 가상 함수 추가 후 사용 , 생성자에서 new로 객체를 만든 경우에 적용
 }
+
 ```
