@@ -29,7 +29,7 @@ void CMFCApplication8Dlg::OnBnClickedButton1()
 #include "MFCApplication8Dlg.h"
 void CSon::OnBnClickedButton1()
 {
-	CMFCApplication8Dlg* p = (CMFCApplication8Dlg *)GetParent();   //Add 버튼 클릭 시 타입 변환을 하며 CMFCApplication8Dlg 를 GetParent 로 상속
+	CMFCApplication8Dlg* p = (CMFCApplication8Dlg *)GetParent();   //Add 버튼 클릭 시 타입 변환을 하며 CMFCApplication8Dlg 에 대한 포인터 반환
 	p->m_List.AddString(m_Str);                                    //m_Str 텍스트박스에 입력한 값을 m_List 리스트박스에 추가하기 위해 AddString 사용
 	UpdateData(true);                                              //추가 후 리스트에 추가된 걸 업데이트 해주기 위해 UpdateData 사용
 }
